@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    //     const n1 =[1,7,9]
+    //     const n2 = [34,6,8]
+    //     const n3 =[32,56,89]
+    //    const a =n1.concat(n2,n3)
+
+    //    console.log(a.sort())
+
+    // The issue you're encountering is due to the way JavaScript's sort() method works. By default, sort() converts the elements of the array to strings and then compares their sequences of UTF-16 code unit values. This is why 6 comes after 56 and before 7 in the sorted array
+
+    // To sort the array numerically, you need to pass a comparison function to sort().
+
+    //    console.log(a.sort((x,y)=>x-y))
+
+    //forEach loop
+    //    const fruits = ['apple', 'banana', 'mango'];
+
+    // fruits.forEach(function(fruit, index) {
+    //   console.log(`${index}: ${fruit}`);
+    // });
+
+    // map() method
+    //    const users = [
+    //   { name: 'Alice', age: 25 },
+    //   { name: 'Bob', age: 30 },
+    //   { name: 'Charlie', age: 35 }
+    // ];
+
+    // const names = users.map(function(user) {
+    //   return user.name;
+    // });
+
+    // console.log(names);
+
+    // filter() method :
+
+    // const people = [
+    //   { name: 'Alice', age: 25 },
+    //   { name: 'Bob', age: 17 },
+    //   { name: 'Charlie', age: 32 },
+    //   { name: 'David', age: 15 }
+    // ];
+
+    // const adults = people.filter(function(person) {
+    //   return person.age >= 18;
+    // });
+
+    // console.log(adults);
+
+    // Combining filter() with Other Array Methods
+    // You can chain filter() with other array methods like map() or reduce():
+
+    // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    // const squaredEvenNumbers = numbers
+    //   .filter(number => number % 2 === 0)
+    //   .map(number => number * number);
+
+    // console.log(squaredEvenNumbers);
+
+    // reduce() method :
+    const numbers = [10, 25, 40, 5, 70];
+    // console.log(delete numbers[0])
+    // console.log(numbers.length)
+    // const max = numbers.reduce(function(accumulator, currentValue) {
+    //   return Math.max(accumulator, currentValue);
+    // }, numbers[0]);
+
+    // console.log(max);
+
+    //Array.from() method:
+    // let str = "Harry";
+    // let a = Array.from(str);
+    // console.log(a);
+
+    // for...of  loop :
+  
+    const numb = [10, 25, 40, 5, 70];
+for (let i of numb) {
+    console.log(i)
+}
+    // for...in  loop :
+for (let item in numb) {
+    console.log(item)
+}
+
+// for loop in array :
+for (let j = 0;j<numb.length;j++){
+    console.log(j)
+}
+  </script>
+  <body>
+    <h1>Hello World!</h1>
+  </body>
+</html>
