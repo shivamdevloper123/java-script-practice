@@ -1,0 +1,1 @@
+// PROBLEM 6: Check if a string is a palindrome 

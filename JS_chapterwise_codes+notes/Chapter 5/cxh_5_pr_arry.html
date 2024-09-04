@@ -66,16 +66,19 @@
     // let squreNum = n.map(number => number * number); 
     //     alert("[" + squreNum.join(", ") + "]");
     //     console.log("the square of numbers in the array are ", squreNum);
-    // let numbers = parseInt(prompt("Enter the valid number"))
-    // let fact = 1
-    // function Numfactorial() {
-    // for(let i = 1 ; i<=numbers;i++)  {  
-    //      return fact*=i
-    // }
-    // }
 
-    // let a = Numfactorial()
-    // console.log(a)
+
+    let numbers = parseInt(prompt("Enter the valid number"))
+    function Numfactorial(numbers) {
+        let fact = 1
+    for(let i = 1 ; i<=numbers;i++)  {  
+          fact*=i
+    }
+    return fact;
+    }
+
+    let a = Numfactorial(numbers)
+    console.log(a)
 
     // factorial by recursive function
 
@@ -92,12 +95,12 @@
     // alert(`factorial of number ${userInput} :  ${result}`)
     
     //PROBLEM 5 : use reduce method of array  to calculate factorial of a given number from an array of first n natural numbers (n being the numbers whose factorial needs to be calculated ) 
-    let arr = [1,2,3,4,5,6,7];
+    // let arr = [1,2,3,4,5,6,7];
 
-    let factorial = arr.reduce((x1,x2)=>{
-        return x1*x2 
-    })
- console.log(factorial)
+    // let factorial = arr.reduce((x1,x2)=>{
+    //     return x1*x2 
+    // })
+//  console.log(factorial)
     
 
 </script>
